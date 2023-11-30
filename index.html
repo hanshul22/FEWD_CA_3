@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste & Treasure</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1><b>Taste & Treasure</b></h1>
+    </div>
+    <div class="header">
+      <div class="flex">
+        <div class="heading_para">
+          <div class="h2">
+            <h2 class="heading_h2">
+              <i
+                >Unveiling Culinary Delights, Unearthing Flavors,<br />
+                and Navigating Gastronomic Riches Daily
+              </i>
+            </h2>
+            <div class="para">
+              <p>
+                Welcome to Taste and Treasure,<br />
+                your daily guide to culinary exploration.<br />
+                Discover random meals daily and explore<br />
+                diverse global dishes across various tantalizing categories.<br />
+                Embark on a flavorful journey today!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      />
+    </div>
+    <div class="inputbox">
+      <input
+        type="text"
+        id="searchInput"
+        class="search"
+        placeholder="Search for meal category..."
+      />
+    </div>
+    <main>
+      <div id="randomMeal" class="random-meal">
+        <div id="randomMealItem" class="meal-item" style="display: none">
+          <h2 class="heading_h2d">Random Meal</h2>
+
+          <div class="meal-image">
+            <img id="mealImage" src="" alt="" />
+          </div>
+          <div class="meal-name">
+            <p id="mealName"></p>
+          </div>
+        </div>
+      </div>
+      <div class="flex_box">
+        <div
+          id="searchedMeals"
+          class="searched-meals meal-items"
+          style="display: none"
+        ></div>
+      </div>
+    </main>
+
+    <div id="modalContainer"></div>
+    <div class="hanshul">
+      <h1><b> Made With ❤️ by Hanshul</b></h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

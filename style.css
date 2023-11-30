@@ -1,0 +1,257 @@
+/* Reset and General Styles */
+body {
+  font-family: Arial, sans-serif; /* Set default font */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: wheat;
+  background-image: url('assets/wood1.jpg'); /* Set background image */
+  background-repeat: repeat;
+  background-size: cover;
+  font-family: 'Playfair Display'; /* Override font for specific elements */
+}
+
+/* Main Heading Styles */
+h1 {
+  font-size: 90px;
+  font-family: 'Montserrat'; /* Use Montserrat font for main headings */
+  font-weight: 900;
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Add space between letters */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  color: rgb(255, 255, 255), 210, 173; /* Set text color */
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 3%;
+  background-image: url('assets/para image.jpg'); /* Set header background image */
+  color: #f2f2f2;
+  text-align: center;
+  height: 50vh;
+  width: 78vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black; /* Override text color */
+}
+
+/* Subheading Styles */
+.heading_h2 {
+  font-size: 45px;
+  font-weight: 900;
+  position: relative;
+  top: 50px;
+}
+
+/* Paragraph Styles */
+.para {
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  top: 70px;
+}
+
+/* Input Box Styles */
+.inputbox {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+/* Search Input Styles */
+.search {
+  padding: 1vh 1vw;
+  border: 2px solid #ccc;
+  border-radius: 20px 0 20px 0;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 40px;
+  text-align: center;
+}
+
+.search:focus {
+  border-color: #145987;
+  box-shadow: 0 0 5px rgba(51, 159, 232, 0.7);
+}
+
+/* Random Meal Styles */
+#randomMealItem {
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.622);
+  width: 30vw;
+  height: 60vh;
+  margin-left: 30vw;
+  margin-right: 20vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding: 4%;
+  border-radius: 20px;
+}
+
+.heading_h2d {
+  position: relative;
+  bottom: 80px;
+}
+
+.flex_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+/* Searched Meals Styles */
+#searchedMeals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  column-gap: 125px;
+}
+
+/* Individual Meal Item Styles */
+#mealImage {
+  width: 40vh;
+  height: 40vh;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  bottom: 60px;
+}
+
+#mealName {
+  font-size: 100%;
+  position: relative;
+  bottom: 60px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 900;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Style for searched meal items */
+.meal-item {
+  font-size: 30px;
+}
+
+.meal-item img {
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  h1 {
+    font-size: 40px;
+  }
+
+  .header {
+    height: 30vh;
+  }
+
+  .heading_h2 {
+    font-size: 20px;
+    top: 20px;
+  }
+
+  .para {
+    font-size: 13px;
+    top: 30px;
+  }
+
+  .inputbox {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .search {
+    padding: 0.5vh 0.5vw;
+    font-size: 20px;
+    border-radius: 10px 0 10px 0;
+  }
+
+  #randomMealItem {
+    font-size: 25px;
+    width: 80vw;
+    height: 50vh;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 2%;
+  }
+
+  .heading_h2d {
+    bottom: 40px;
+  }
+
+  .flex_box {
+    padding: 2%;
+  }
+
+  #searchedMeals {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 25px;
+  }
+
+  #mealImage {
+    width: 30vh;
+    height: 30vh;
+    bottom: 40px;
+  }
+
+  #mealName {
+    font-size: 80%;
+    bottom: 40px;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .close-btn {
+    font-size: 30px;
+  }
+
+  .meal-item {
+    font-size: 20px;
+  }
+
+  .meal-item img {
+    width: 300px;
+    height: 300px;
+  }
+}
